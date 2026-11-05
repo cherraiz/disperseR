@@ -11,3 +11,4 @@
 ^doc$
 ^Meta$
 ^vignettes/.*\.html$
+^CRAN-SUBMISSION$

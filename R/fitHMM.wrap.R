@@ -45,7 +45,6 @@
 #' }
 #' @export fitHMM.wrap
 #'
-#' @importFrom momentuHMM prepData fitHMM viterbi
 fitHMM.wrap <- function(data,
                         ids = NULL,
                         coordNames = c("x", "y"),

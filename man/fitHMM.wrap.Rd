@@ -4,7 +4,7 @@
 \alias{fitHMM.wrap}
 \title{Fit Hidden Markov Models for Movement Data Classification}
 \usage{
-\method{fitHMM}{wrap}(
+fitHMM.wrap(
   data,
   ids = NULL,
   coordNames = c("x", "y"),

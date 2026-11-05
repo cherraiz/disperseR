@@ -205,7 +205,7 @@ The model is fitted by segment (`id_split`), so that no step crosses the gap of
 M03. `fitHMM.wrap()` returns the identifier in a column named `ID`, which here
 holds the segment:
 
-```{r hmm, results = "hide", message = FALSE}
+```{r hmm, eval = FALSE}
 reg <- sim_states[, c("id_split", "time", "x", "y", "sex")]
 
 hmm <- fitHMM.wrap(reg, ids = "id_split", stationary = TRUE,
@@ -213,6 +213,19 @@ hmm <- fitHMM.wrap(reg, ids = "id_split", stationary = TRUE,
                    mean.step.2 = 150, sd.step.2 = 100,
                    ang.con.1 = 0.7, ang.con.2 = 0.1)
 ```
+
+```{r hmm-load, include = FALSE}
+# The two HMMs of this vignette are fitted beforehand with the code shown
+# (data-raw/vignette_hmm.R), to keep the CRAN check within its time limit.
+# Los dos HMM de esta vignette se ajustan antes con el código mostrado
+# (data-raw/vignette_hmm.R), para que el check de CRAN no supere su tiempo límite.
+hmm_fits <- readRDS("hmm_fits.rds")
+hmm <- hmm_fits$hmm
+```
+
+Fitting the model takes about half a minute. To keep this vignette quick to
+build, the two models it uses were fitted beforehand with the code shown, and
+their results are loaded from a file. Everything else runs as you read it.
 
 ```{r hmm-print}
 hmm$models$global_model$mle$step
@@ -423,11 +436,18 @@ starting values. A two-state model started near resting and moving values
 separates *activity modes*: daytime rests on one side, and every movement,
 including the movements inside home ranges, on the other:
 
-```{r hmm-2states, results = "hide", message = FALSE}
+```{r hmm-2states, eval = FALSE}
 hmm2 <- fitHMM.wrap(reg, ids = "id_split",
                     mean.step.1 = 300, sd.step.1 = 300,
                     mean.step.2 = 20, sd.step.2 = 20,
                     ang.con.1 = 0.5, ang.con.2 = 0.1)
+```
+
+```{r hmm-2states-load, include = FALSE}
+hmm2 <- hmm_fits$hmm2
+```
+
+```{r hmm-2states-data}
 st2 <- hmm2$data
 st2$ID <- sub("_[0-9]+$", "", as.character(st2$ID))
 ```

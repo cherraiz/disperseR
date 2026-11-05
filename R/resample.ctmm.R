@@ -31,7 +31,6 @@
 #' @export
 #'
 #' @importFrom sf st_crs st_as_sf st_transform st_coordinates
-#' @importFrom ctmm as.telemetry ctmm.guess ctmm.fit ctmm predict
 resample.ctmm <- function(dat,
                           tint,
                           ids = "ID",
