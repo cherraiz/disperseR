@@ -2,7 +2,7 @@
 % Please edit documentation in R/get.epsilon.R
 \name{get.epsilon}
 \alias{get.epsilon}
-\title{Calculate \code{ε} threshold for spatial clustering}
+\title{Calculate \eqn{\epsilon}{epsilon} threshold for spatial clustering}
 \usage{
 get.epsilon(
   data,
@@ -38,7 +38,7 @@ A numeric value representing the threshold if \code{mode = "global"}, or a named
 thresholds if \code{mode = "individual"} or \code{mode = "groups"}.
 }
 \description{
-Computes the threshold \code{ε} (epsilon) based on step lengths.
+Computes the threshold \eqn{\epsilon}{epsilon} (epsilon) based on step lengths.
 The threshold can be calculated using density curve intersections (requires a
 behavioral state column with exactly two states), or simply by calculating the
 overall mean or median of the step lengths. The calculation can be applied globally,

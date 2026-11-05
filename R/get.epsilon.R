@@ -1,6 +1,6 @@
-#' Calculate \code{ε} threshold for spatial clustering
+#' Calculate \eqn{\epsilon}{epsilon} threshold for spatial clustering
 #'
-#' @description Computes the threshold \code{ε} (epsilon) based on step lengths. 
+#' @description Computes the threshold \eqn{\epsilon}{epsilon} (epsilon) based on step lengths. 
 #'   The threshold can be calculated using density curve intersections (requires a 
 #'   behavioral state column with exactly two states), or simply by calculating the 
 #'   overall mean or median of the step lengths. The calculation can be applied globally, 

@@ -29,7 +29,7 @@ Default is \code{"state"}.}
 \item{step.col}{Character. The name of the column containing the step lengths.
 Default is \code{"step"}.}
 
-\item{threshold}{Numeric. An optional threshold value (e.g., \code{ε} threshold) to
+\item{threshold}{Numeric. An optional threshold value (e.g., \eqn{\epsilon}{epsilon} threshold) to
 plot as a vertical dashed line. Default is \code{NULL}.}
 
 \item{...}{Additional arguments passed to or from other methods.}

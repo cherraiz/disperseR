@@ -14,7 +14,7 @@
 #'   Default is \code{"state"}.
 #' @param step.col Character. The name of the column containing the step lengths. 
 #'   Default is \code{"step"}.
-#' @param threshold Numeric. An optional threshold value (e.g., \code{ε} threshold) to 
+#' @param threshold Numeric. An optional threshold value (e.g., \eqn{\epsilon}{epsilon} threshold) to 
 #'   plot as a vertical dashed line. Default is \code{NULL}.
 #' @param ... Additional arguments passed to or from other methods.
 #'
