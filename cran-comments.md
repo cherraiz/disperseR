@@ -11,6 +11,8 @@ This is a new submission.
   "area-restricted phase", defined in the same sentence, and 'unanchored'
   is a technical term for movements made before the first area-restricted
   phase. Both are spelled correctly.
+* On win-builder the URL https://github.com/cherraiz/disperseR returned a
+  transient "504 Gateway Timeout". The URL is valid and accessible.
 
 ## Test environments
 
