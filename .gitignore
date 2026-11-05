@@ -1,0 +1,14 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+*.Rcheck/
+*.tar.gz
+vignettes/*.html
+vignettes/.Rhistory
+doc/
+Meta/
+
+# Personal notes, not part of the package / Notas personales, fuera del paquete
+Razonamiento_Types.rtf

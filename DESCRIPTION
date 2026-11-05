@@ -1,0 +1,41 @@
+Package: disperseR
+Title: Classification of Animal Movements
+Version: 0.1.0
+Authors@R: person("Cesar", "Herraiz", email = "c.herraizfer@gmail.com",
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0002-4770-2013"))
+Description: Tools to segment and classify animal movement trajectories,
+    with a focus on long-range movements. Tracks can be regularised with
+    continuous-time movement models from 'ctmm' and classified into
+    behavioural states with hidden Markov models from 'momentuHMM'.
+    Area-restricted phases (ARP) are then identified with density-based
+    spatial clustering ('dbscan'), linked through time, and the movements
+    between them are classified according to the spatial network of
+    previously visited areas (unanchored movement, loops, network expansion
+    and internal transit).
+License: MIT + file LICENSE
+URL: https://github.com/cherraiz/disperseR
+BugReports: https://github.com/cherraiz/disperseR/issues
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Depends:
+    R (>= 3.5)
+Imports: 
+    dplyr (>= 1.1.0),
+    tidyr,
+    sf,
+    ctmm,
+    momentuHMM,
+    dbscan,
+    purrr,
+    igraph,
+    tibble,
+    ggplot2 (>= 3.5.0),
+    rlang
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+LazyData: true

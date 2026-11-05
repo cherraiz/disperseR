@@ -1,0 +1,13 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^LICENSE\.md$
+^Razonamiento_Types\.rtf$
+^data-raw$
+^cran-comments\.md$
+^CLAUDE\.md$
+^\.RData$
+^\.Rhistory$
+\.DS_Store$
+^doc$
+^Meta$
+^vignettes/.*\.html$
