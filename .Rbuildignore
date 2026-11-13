@@ -12,3 +12,7 @@
 ^Meta$
 ^vignettes/.*\.html$
 ^CRAN-SUBMISSION$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^\.github$

@@ -1,0 +1,43 @@
+# Website of the package, built by .github/workflows/pkgdown.yaml on each push
+# Web del paquete, construida por .github/workflows/pkgdown.yaml en cada push
+url: https://cherraiz.github.io/disperseR/
+
+template:
+  bootstrap: 5
+
+# The vignette named like the package becomes the "Get started" page
+# La vignette con el nombre del paquete se convierte en la página "Get started"
+
+reference:
+- title: Prepare the tracks
+  desc: Split tracks at monitoring gaps and regularise them.
+  contents:
+  - divide.track.by.gap
+  - resample.ctmm
+- title: Behavioural states
+  desc: Fit hidden Markov models and inspect the step lengths of each state.
+  contents:
+  - fitHMM.wrap
+  - draw.step.densities
+- title: Area-restricted phases
+  desc: Choose the clustering distance, identify ARPs and link them through time.
+  contents:
+  - get.epsilon
+  - get.arp
+  - link.arp
+  - draw.linked.clusters
+- title: Movement phases
+  desc: Classify the movements between ARPs and transfer them to the original locations.
+  contents:
+  - class.mov
+  - transfer.disperseR
+- title: Summaries and plots
+  contents:
+  - phase.summary
+  - draw.track
+  - draw.timeline
+  - print.disperseR
+- title: Example data
+  contents:
+  - sim_tracks
+  - sim_states
