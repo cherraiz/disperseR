@@ -1,8 +1,13 @@
 Package: disperseR
 Title: Classification of Animal Movements
 Version: 0.1.0
-Authors@R: person("Cesar", "Herraiz", email = "c.herraizfer@gmail.com",
-    role = c("aut", "cre"), comment = c(ORCID = "0000-0002-4770-2013"))
+Authors@R: c(
+    person("Cesar", "Herraiz", email = "c.herraizfer@gmail.com",
+           role = c("aut", "cre"), comment = c(ORCID = "0000-0002-4770-2013")),
+    person("Fridolin", "Zimmermann", role = "aut",
+           comment = c(ORCID = "0000-0003-3861-246X")),
+    person("Sarah", "Bauduin", role = "aut",
+           comment = c(ORCID = "0000-0002-3252-5894")))
 Description: Tools to segment and classify animal movement trajectories,
     with a focus on long-range movements. Tracks can be regularised with
     continuous-time movement models from 'ctmm' and classified into
